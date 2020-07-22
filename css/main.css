@@ -1,0 +1,89 @@
+@font-face {
+    font-family: proxima-nova-semibold;
+    src: url('../fonts/Proxima/Mark Simonson - Proxima Nova Semibold.otf');
+}
+
+@font-face {
+    font-family: proxima-nova-light;
+    src: url('../fonts/Proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Light.otf');
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 0 20%;
+    text-align: center;
+    font-family: proxima-nova-semibold;
+}
+
+.big-title {
+    font-size: 63px;
+}
+
+.text-desc {
+    font-family: proxima-nova-light;
+    color: #A8B2B9;
+    letter-spacing: 0;
+    margin-top: -20px;
+}
+
+.btn {
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn-blue {
+    background-color: #0071FF;
+    color: white;
+}
+
+.btn-blue-light {
+    background-color: #F3F7FD;
+    color: #0071FF;
+    font-size: 14px;
+}
+
+.text-blue {
+    color: #0071FF;
+}
+
+.use-free {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    background-color: #F3F7FD;
+    margin-top: 20px;
+    padding: 20px 10%;
+}
+
+.tabs-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.tabs-menu li {
+    list-style: none;
+}
+
+.tabs-content {
+    display: flex;
+}
+
+.tabs-content-left img {
+    width: 300px;
+}
+
+.tabs-content-right {
+    text-align: justify;
+    width: 50%;
+    margin-left: 10%;
+}
