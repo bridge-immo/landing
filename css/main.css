@@ -15,6 +15,10 @@ header {
     margin-bottom: 20px;
 }
 
+h1, h2, h3 {
+    font-family: proxima-nova-semibold;
+}
+
 .container {
     margin: 0 20%;
     text-align: center;
@@ -22,7 +26,6 @@ header {
 }
 
 .big-title {
-    font-family: proxima-nova-semibold;
     font-size: 54px;
 }
 
@@ -35,6 +38,7 @@ header {
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 3px;
+    text-align: center !important;
 }
 
 .btn-blue {
@@ -70,7 +74,8 @@ header {
 
 .tabs-menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    white-space: nowrap;
     margin-bottom: 10%;
 }
 
@@ -94,4 +99,27 @@ header {
 
 .hide-block {
     display: none;
+}
+
+.bridge-bullet-points {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bridge-bullet-points div {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.highlight-yellow {
+    background-color: #FFFCEF;
+    font-size: 40px;
+    padding: 15px 20px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.text-info-bold {
+    font-family: proxima-nova-semibold;
 }
