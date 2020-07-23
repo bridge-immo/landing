@@ -30,15 +30,15 @@
                     </div>
                 </div>
             </div>
-            <div class="tabs">
+            <div id="tabs" class="tabs">
                 <div>
                     <ul class="tabs-menu">
-                        <li><a href="#rent-receipt" class="btn">📌 Quittances</a></li>
-                        <li><a href="#lease" class="btn">✍️ Bail de location</a></li>
-                        <li><a href="#automation" class="btn">🤖 Automatisez la gestion locative</a></li>
+                        <li><a href="#rent-receipt" class="btn" onclick="showRentReceipt()">📌 Quittances</a></li>
+                        <li><a href="#lease" class="btn" onclick="showLease()">✍️ Bail de location</a></li>
+                        <li><a href="#automation" class="btn" onclick="showAutomation()">🤖 Automatisez la gestion locative</a></li>
                     </ul>
                 </div>
-                <div class="tabs-content">
+                <div id="tabs-rent-receipt" class="tabs-content">
                     <div class="tabs-content-left">
                         <img src="img/information_flow_flatline.png" alt="information_flow_flatline.png">
                     </div>
@@ -52,12 +52,60 @@
                         <a href="#add-property" class="btn btn-blue">👉 Générer une quittance</a>
                     </div>
                 </div>
-            </div>
-            <div>
-                
+                <div id="tabs-lease" class="tabs-content hide-block">
+                    <div class="tabs-content-left">
+                        <img src="img/information_flow_flatline.png" alt="information_flow_flatline 2.png">
+                    </div>
+                    <div class="tabs-content-right">
+                        <h2>Générez votre bail de location en quelques clics</h2>
+                        <p class="text-desc">
+                            Depuis toujours on cherche à nous faire croire que la rédaction d'un bail est accessible uniquement aux experts. Bridge vous offre un service simplifié et fais de vous le seul capitaine de légitime de votre logement.
+                        </p>
+                        <a href="#add-property" class="btn btn-blue">👉 Générer mon bail</a>
+                    </div>
+                </div>
+                <div id="tabs-automation" class="tabs-content hide-block">
+                    <div class="tabs-content-left">
+                        <img src="img/information_flow_flatline.png" alt="information_flow_flatline 3.png">
+                    </div>
+                    <div class="tabs-content-right">
+                        <h2>Gagnez du temps et concentrez-vous sur l'essentiel</h2>
+                        <p class="text-desc">
+                            Bridge vous accompagne et facilite vos démarches au travers d'une experience simplifiée et plus humaine. Grâce à l'automatisation, vos documents sont transmis en un clic chaque mois à vos locataires.
+                        </p>
+                        <a href="#add-property" class="btn btn-blue">👉 Automatiser ma gestion</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <script>
+        let rentReceiptTab = document.getElementById('tabs-rent-receipt')
+        let leaseTab = document.getElementById('tabs-lease')
+        let automationTab = document.getElementById('tabs-automation')
+        let tabs = document.getElementById('tabs')
+
+        function showRentReceipt() {
+            rentReceiptTab.classList.remove('hide-block')
+            leaseTab.classList.add('hide-block')
+            automationTab.classList.add('hide-block')
+            tabs.style.backgroundColor = '#F3F7FD'
+        }
+
+        function showLease() {
+            leaseTab.classList.remove('hide-block')
+            rentReceiptTab.classList.add('hide-block')
+            automationTab.classList.add('hide-block')
+            tabs.style.backgroundColor = '#FFFCEF'
+        }
+
+        function showAutomation() {
+            automationTab.classList.remove('hide-block')
+            rentReceiptTab.classList.add('hide-block')
+            leaseTab.classList.add('hide-block')
+            tabs.style.backgroundColor = '#FFF1F1'
+        }
+    </script>
 </body>
 
 </html>

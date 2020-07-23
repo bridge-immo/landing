@@ -11,25 +11,24 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 20px;
     margin-bottom: 20px;
 }
 
 .container {
     margin: 0 20%;
     text-align: center;
-    font-family: proxima-nova-semibold;
+    font-family: proxima-nova-light;
 }
 
 .big-title {
-    font-size: 63px;
+    font-family: proxima-nova-semibold;
+    font-size: 54px;
 }
 
 .text-desc {
-    font-family: proxima-nova-light;
     color: #A8B2B9;
     letter-spacing: 0;
-    margin-top: -20px;
 }
 
 .btn {
@@ -47,6 +46,7 @@ header {
     background-color: #F3F7FD;
     color: #0071FF;
     font-size: 14px;
+    padding-top: 17px;
 }
 
 .text-blue {
@@ -56,6 +56,10 @@ header {
 .use-free {
     display: flex;
     flex-direction: column;
+}
+
+.use-free .text-info {
+    margin-top: 50px;
 }
 
 .tabs {
@@ -86,4 +90,8 @@ header {
     text-align: justify;
     width: 50%;
     margin-left: 10%;
+}
+
+.hide-block {
+    display: none;
 }
