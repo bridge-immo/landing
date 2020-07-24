@@ -12,15 +12,17 @@
     <div class="container">
         <header>
             <a href="#"><img src="img/LogoBridge.png" alt="LogoBridge.png"></a>
-            <a href="" class="btn btn-blue-light">Commencer gratuitement sur Bridge</a>
+            <a href="" class="btn btn-blue-light text-secondary-bold">Commencer gratuitement sur Bridge</a>
         </header>
         <div>
             <img src="img/rocket_boy.png" alt="rocket_boy.png">
             <div class="getting_started">
-                <h1 class="big-title">La gestion locative <span class="text-blue">simplifiée</span></h1>
-                <p class="text-desc">
-                    Créez votre bail et automatisez l'envoi de vos quittances de loyer gratuitement dès maintenant
-                </p>
+                <div class="presentation">
+                    <h1 class="big-title">La gestion locative <span class="text-blue">simplifiée</span></h1>
+                    <p class="text-secondary-bold">
+                        Créez votre bail et automatisez l'envoi de vos quittances de loyer gratuitement dès maintenant
+                    </p>
+                </div>
                 <div class="use_free">
                     <div>
                         <a href="#add-property" class="btn btn-blue">Utiliser Bridge gratuitement</a>
@@ -33,9 +35,12 @@
             <div id="tabs" class="tabs">
                 <div>
                     <ul class="tabs-menu">
-                        <li><a href="#rent-receipt" class="btn" onclick="showRentReceipt()">📌 Quittances</a></li>
-                        <li><a href="#lease" class="btn" onclick="showLease()">✍️ Bail de location</a></li>
-                        <li><a href="#automation" class="btn" onclick="showAutomation()">🤖 Automatisez la gestion</a></li>
+                        <li><a href="#rent-receipt" id="menu-rent-receipt" class="btn active-tab-menu"
+                                onclick="showRentReceipt()">📌 Quittances</a></li>
+                        <li><a href="#lease" id="menu-lease" class="btn" onclick="showLease()">✍️ Bail de location</a>
+                        </li>
+                        <li><a href="#automation" id="menu-automation" class="btn" onclick="showAutomation()">🤖
+                                Automatisez la gestion</a></li>
                     </ul>
                 </div>
                 <div id="tabs-rent-receipt" class="tabs-content">
@@ -100,19 +105,23 @@
                 </div>
                 <div>
                     <span class="highlight-yellow">⛱</span>
-                    <p><span class="text-info-bold">Automatisez l'envoie des documents</span> chaque mois à vos locataires.</p>
+                    <p><span class="text-info-bold">Automatisez l'envoie des documents</span> chaque mois à vos
+                        locataires.</p>
                 </div>
                 <div>
                     <span class="highlight-yellow">🖋</span>
-                    <p><span class="text-info-bold">Faîtes signez</span> l'ensemble de vos documents électroniquement <span class="text-info-bold">en quelques clics.</span></p>
+                    <p><span class="text-info-bold">Faîtes signez</span> l'ensemble de vos documents électroniquement
+                        <span class="text-info-bold">en quelques clics.</span></p>
                 </div>
                 <div>
                     <span class="highlight-yellow">☝️</span>
-                    <p>En cas de retard Bridge prend en charge l'envoi <span class="text-info-bold">des relances de paiment</span> à vos locataires.</p>
+                    <p>En cas de retard Bridge prend en charge l'envoi <span class="text-info-bold">des relances de
+                            paiment</span> à vos locataires.</p>
                 </div>
                 <div>
                     <span class="highlight-yellow">⚖️</span>
-                    <p>Nos équipes s'assurent de maintenir vos documents <span class="text-info-bold">conformément aux réglementations.</span></p>
+                    <p>Nos équipes s'assurent de maintenir vos documents <span class="text-info-bold">conformément aux
+                            réglementations.</span></p>
                 </div>
             </div>
         </div>
@@ -122,12 +131,24 @@
         let leaseTab = document.getElementById('tabs-lease')
         let automationTab = document.getElementById('tabs-automation')
         let tabs = document.getElementById('tabs')
+        let buttonsMenu = ['menu-rent-receipt', 'menu-lease', 'menu-automation']
+
+        function activeTabMenu(menu_active) {
+            document.getElementById(menu_active).classList.add('active-tab-menu')
+            buttonsMenu.forEach(elem => {
+                if (elem !== menu_active) {
+                    console.log(elem)
+                    document.getElementById(elem).classList.remove('active-tab-menu')
+                }
+            })
+        }
 
         function showRentReceipt() {
             rentReceiptTab.classList.remove('hide-block')
             leaseTab.classList.add('hide-block')
             automationTab.classList.add('hide-block')
             tabs.style.backgroundColor = '#F3F7FD'
+            activeTabMenu('menu-rent-receipt')
         }
 
         function showLease() {
@@ -135,6 +156,7 @@
             rentReceiptTab.classList.add('hide-block')
             automationTab.classList.add('hide-block')
             tabs.style.backgroundColor = '#FFFCEF'
+            activeTabMenu('menu-lease')
         }
 
         function showAutomation() {
@@ -142,6 +164,7 @@
             rentReceiptTab.classList.add('hide-block')
             leaseTab.classList.add('hide-block')
             tabs.style.backgroundColor = '#FFF1F1'
+            activeTabMenu('menu-automation')
         }
     </script>
 </body>

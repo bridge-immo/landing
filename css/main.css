@@ -8,6 +8,11 @@
     src: url('../fonts/Proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Light.otf');
 }
 
+@font-face {
+    font-family: proxima-nova-regular;
+    src: url('../fonts/Proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf');
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -20,22 +25,34 @@ h1, h2, h3 {
 }
 
 .container {
-    margin: 0 20%;
+    margin: 0 10%;
     text-align: center;
     font-family: proxima-nova-light;
+}
+
+.presentation h1, p {
+    margin: 10px;
+}
+
+.presentation {
+    margin: 50px 0;
 }
 
 .big-title {
     font-size: 54px;
 }
 
-.text-desc {
+p {
     color: #A8B2B9;
     letter-spacing: 0;
 }
 
+.text-secondary-bold, a {
+    font-family: proxima-nova-regular;
+}
+
 .btn {
-    padding: 10px 30px;
+    padding: 13px 40px;
     text-decoration: none;
     border-radius: 3px;
     text-align: center !important;
@@ -70,6 +87,7 @@ h1, h2, h3 {
     background-color: #F3F7FD;
     margin-top: 20px;
     padding: 20px 10%;
+    min-height: 60vh
 }
 
 .tabs-menu {
@@ -88,13 +106,19 @@ h1, h2, h3 {
 }
 
 .tabs-content-left img {
-    width: 300px;
+
+    width: 200px;
 }
 
 .tabs-content-right {
     text-align: justify;
     width: 50%;
     margin-left: 10%;
+}
+
+.active-tab-menu {
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
 }
 
 .hide-block {
