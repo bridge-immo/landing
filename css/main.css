@@ -13,6 +13,8 @@
     src: url('../fonts/Proxima/Mark\ Simonson\ -\ Proxima\ Nova\ Regular.otf');
 }
 
+/* Main CSS */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -24,27 +26,39 @@ h1, h2, h3 {
     font-family: proxima-nova-semibold;
 }
 
+a {
+    color: black;
+}
+
+p {
+    color: #A8B2B9;
+    letter-spacing: 0;
+}
+
 .container {
     margin: 0 10%;
     text-align: center;
     font-family: proxima-nova-light;
 }
 
-.presentation h1, p {
-    margin: 10px;
+.highlight-yellow {
+    background-color: #FFFCEF;
+    font-size: 40px;
+    padding: 15px 20px;
+    border-radius: 100%;
+    margin: 20px;
 }
 
-.presentation {
-    margin: 50px 0;
+.highlight-white {
+    background-color: white;
+    font-size: 40px;
+    padding: 15px 20px;
+    border-radius: 100%;
+    margin: 20px;
 }
 
-.big-title {
-    font-size: 54px;
-}
-
-p {
-    color: #A8B2B9;
-    letter-spacing: 0;
+.text-info-bold {
+    font-family: proxima-nova-semibold;
 }
 
 .text-secondary-bold, a {
@@ -54,7 +68,7 @@ p {
 .btn {
     padding: 13px 40px;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 2px;
     text-align: center !important;
 }
 
@@ -70,8 +84,28 @@ p {
     padding-top: 17px;
 }
 
+.btn-white {
+    color: #0071FF;
+    background-color: white;
+    border: #0071FF;
+}
+
 .text-blue {
     color: #0071FF;
+}
+
+/* Bridge presentation */
+
+.presentation h1, p {
+    margin: 10px;
+}
+
+.presentation {
+    margin: 50px 0;
+}
+
+.big-title {
+    font-size: 54px;
 }
 
 .use-free {
@@ -82,6 +116,8 @@ p {
 .use-free .text-info {
     margin-top: 50px;
 }
+
+/* Product tabs presentation */
 
 .tabs {
     background-color: #F3F7FD;
@@ -125,6 +161,8 @@ p {
     display: none;
 }
 
+/* Bullet points to present bridge */
+
 .bridge-bullet-points {
     display: flex;
     justify-content: space-around;
@@ -136,14 +174,22 @@ p {
     margin-top: 20px;
 }
 
-.highlight-yellow {
-    background-color: #FFFCEF;
-    font-size: 40px;
-    padding: 15px 20px;
-    border-radius: 100%;
-    margin: 20px;
+/* Beta Banner */
+
+.beta-banner {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    background-color: #0071FF;
+    color: white;
+    min-height: 20vh;
+    margin-top: 5%;
 }
 
-.text-info-bold {
-    font-family: proxima-nova-semibold;
+.beta-banner > .left {
+    padding: 40px;
+}
+
+.right > a {
+    margin-top: 20px;
 }
