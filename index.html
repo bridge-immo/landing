@@ -399,33 +399,11 @@
         }
 
         // Typed text to change name on landing
-        let typewriter = new Typewriter(exampleName, {
+        new Typewriter('#exampleName', {
+            strings: ['Baptiste', 'Stéphanie', 'Christophe', 'Céline', 'David', 'Laura', 'Julien', 'Manon', 'Nicolas'],
+            autoStart: true,
             loop: true
         })
-        // '["Baptiste", "Stéphanie", "Christophe", "Céline", "David", "Laura", "Julien", "Manon", "Nicolas"]'
-        typewriter.typeString('Baptiste')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Christophe')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Céline')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('David')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Laura')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Julien')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Manon')
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Nicolas')
-            .start()
     </script>
 </body>
 
