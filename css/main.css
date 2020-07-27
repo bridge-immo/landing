@@ -74,7 +74,7 @@ p {
     margin: 10px;
 }
 
-.btn:hover {
+.btn-tab:hover {
     background: rgba(0,0,0,0.05);
     border-radius: 4px;
 }
@@ -127,6 +127,7 @@ p {
 
 .use_free .text-secondary {
     font-size: 13px;
+    margin-top: 20px;
 }
 
 /* Product tabs presentation */
@@ -172,6 +173,11 @@ p {
     border-radius: 0px;
 }
 
+.active-tab-menu:hover {
+    border-bottom: 3px solid black;
+    border-radius: 0px;
+}
+
 .hide-block {
     display: none;
 }
@@ -207,4 +213,30 @@ p {
 
 .right > a {
     margin-top: 20px;
+}
+
+/* users reviews */
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reviews > div {
+    background-color: #F3F7FD;
+    width: 20%;
+    margin: 10px;
+    margin-left: 0;
+    text-align: left;
+    padding: 30px;
+}
+
+.reviews img {
+    width: 70%;
+    border-radius: 100%;
+}
+
+.reviews_profil {
+    display: flex;
 }
