@@ -136,7 +136,7 @@
         </div>
         <div>
             <div>
-                <h2>Comme <span class="text-blue">Baptiste</span>, rejoignez la communauté Bridge 🙋‍♂️</h2>
+                <h2>Comme <span class="text-blue" id="exampleName"></span>, rejoignez la communauté Bridge 🙋‍♂️</h2>
                 <p>Le coeur de notre plateforme est de répondre à vos besoins en proposant un service à l'écoute et
                     centré sur votre confort d'utilisation</p>
             </div>
@@ -285,7 +285,8 @@
             </div>
             <div>
                 <h2>L'outil essentiel des <span class="text-blue">propriétaires bailleurs</span> 💪</h2>
-                <p>Main dans la main avec les propriétaires bailleurs, nous avons identifié les problématiques de votre quotidien et crée les outils les plus simples pour y répondre.</p>
+                <p>Main dans la main avec les propriétaires bailleurs, nous avons identifié les problématiques de votre
+                    quotidien et crée les outils les plus simples pour y répondre.</p>
                 <a href="#" class="btn btn-blue">Devenir bêta-testeur 🥰</a>
             </div>
         </div>
@@ -353,12 +354,14 @@
 
         </div>
     </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script>
         let rentReceiptTab = document.getElementById('tabs-rent-receipt')
         let leaseTab = document.getElementById('tabs-lease')
         let automationTab = document.getElementById('tabs-automation')
         let tabs = document.getElementById('tabs')
         let buttonsMenu = ['menu-rent-receipt', 'menu-lease', 'menu-automation']
+        let exampleName = document.getElementById('exampleName')
 
         function activeTabMenu(menu_active) {
             document.getElementById(menu_active).classList.add('active-tab-menu')
@@ -370,6 +373,7 @@
             })
         }
 
+        // Tab menu to presesent 'quittances', 'bail' and 'automatisation', change background color and just show tab which want to see.
         function showRentReceipt() {
             rentReceiptTab.classList.remove('hide-block')
             leaseTab.classList.add('hide-block')
@@ -393,6 +397,35 @@
             tabs.style.backgroundColor = '#FFF1F1'
             activeTabMenu('menu-automation')
         }
+
+        // Typed text to change name on landing
+        let typewriter = new Typewriter(exampleName, {
+            loop: true
+        })
+        // '["Baptiste", "Stéphanie", "Christophe", "Céline", "David", "Laura", "Julien", "Manon", "Nicolas"]'
+        typewriter.typeString('Baptiste')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Christophe')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Céline')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('David')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Laura')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Julien')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Manon')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Nicolas')
+            .start()
     </script>
 </body>
 
