@@ -28,6 +28,7 @@ h1, h2, h3 {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 p {
@@ -61,7 +62,7 @@ p {
     font-family: proxima-nova-semibold;
 }
 
-.text-secondary-bold, a {
+.text-secondary, a {
     font-family: proxima-nova-regular;
 }
 
@@ -70,6 +71,12 @@ p {
     text-decoration: none;
     border-radius: 2px;
     text-align: center !important;
+    margin: 10px;
+}
+
+.btn:hover {
+    background: rgba(0,0,0,0.05);
+    border-radius: 4px;
 }
 
 .btn-blue {
@@ -94,6 +101,11 @@ p {
     color: #0071FF;
 }
 
+/* Login */
+.login {
+    margin: 0 20px;
+}
+
 /* Bridge presentation */
 
 .presentation h1, p {
@@ -108,13 +120,13 @@ p {
     font-size: 54px;
 }
 
-.use-free {
+.use_free {
     display: flex;
     flex-direction: column;
 }
 
-.use-free .text-info {
-    margin-top: 50px;
+.use_free .text-secondary {
+    font-size: 13px;
 }
 
 /* Product tabs presentation */
@@ -128,7 +140,7 @@ p {
 
 .tabs-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     white-space: nowrap;
     margin-bottom: 10%;
 }
@@ -141,9 +153,8 @@ p {
     display: flex;
 }
 
-.tabs-content-left img {
-
-    width: 200px;
+.tabs-content-left {
+    width: 50%;
 }
 
 .tabs-content-right {
@@ -152,9 +163,13 @@ p {
     margin-left: 10%;
 }
 
+.tabs-content-right > a {
+    margin: 20px;
+}
+
 .active-tab-menu {
-    background: rgba(0,0,0,0.05);
-    border-radius: 4px;
+    border-bottom: 3px solid black;
+    border-radius: 0px;
 }
 
 .hide-block {
