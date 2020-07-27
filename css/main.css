@@ -72,6 +72,8 @@ p {
     border-radius: 2px;
     text-align: center !important;
     margin: 10px;
+    margin-left: 0px;
+    width: 40%;
 }
 
 .btn-tab:hover {
@@ -203,16 +205,21 @@ p {
     text-align: left;
     background-color: #0071FF;
     color: white;
-    min-height: 20vh;
+    min-height: 160px;
     margin-top: 5%;
 }
 
 .beta-banner > .left {
-    padding: 40px;
+    padding-top: 5%;
+    width: 10%;
+}
+
+.beta-banner > .right {
+    width: 60%;
 }
 
 .right > a {
-    margin-top: 20px;
+    display: inline-block;
 }
 
 /* users reviews */
