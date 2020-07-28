@@ -232,6 +232,7 @@ p {
 
 .reviews > div {
     background-color: #F3F7FD;
+    border-radius: 3%;
     width: 20%;
     margin: 10px;
     margin-left: 0;
@@ -245,5 +246,15 @@ p {
 }
 
 .reviews_profil {
+    display: flex;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+}
+
+.footer-link {
     display: flex;
 }
