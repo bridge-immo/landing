@@ -1,307 +1,438 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenue sur Bridge. | bridge.immo</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script
-        type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "42d49410-785f-49c3-a8d1-a84bf9ac02f1"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
-</head>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "42d49410-785f-49c3-a8d1-a84bf9ac02f1";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header>
-            <a href="#home"><img src="img/LogoBridge.png" alt="LogoBridge.png"></a>
-            <div>
-                <a href="#signin" class="login">Connexion</a>
-                <a href="#signup" class="btn btn-blue-light text-secondary">S'inscrire sur Bridge</a>
-            </div>
-        </header>
+      <header>
+        <a href="#home"
+          ><img src="img/LogoBridge.png" alt="LogoBridge.png"
+        /></a>
         <div>
-            <img src="img/rocket_boy.png" alt="rocket_boy.png">
-            <div class="getting_started">
-                <div class="presentation">
-                    <h1 class="big-title">La gestion locative <span class="text-blue">simplifiée</span></h1>
-                    <p class="text-secondary">
-                        Créez votre bail et automatisez l'envoi de vos quittances de loyer gratuitement dès maintenant
-                    </p>
-                </div>
-                <div class="use_free">
-                    <div>
-                        <a href="http://localhost:8080/add-property" class="btn btn-blue">Utiliser Bridge
-                            gratuitement</a>
-                    </div>
-                    <div>
-                        <p class="text-secondary">👉 Pas de carte de crédit requise</p>
-                    </div>
-                </div>
-            </div>
-            <div id="tabs" class="tabs">
-                <div>
-                    <ul class="tabs-menu">
-                        <li><a href="#rent-receipt" id="menu-rent-receipt" class="btn btn-tab active-tab-menu"
-                                onclick="showRentReceipt()">📌 Quittances</a></li>
-                        <li><a href="#lease" id="menu-lease" class="btn btn-tab" onclick="showLease()">✍️ Bail de
-                                location</a>
-                        </li>
-                        <li><a href="#automation" id="menu-automation" class="btn btn-tab" onclick="showAutomation()">🤖
-                                Automatisez la gestion</a></li>
-                    </ul>
-                </div>
-                <div id="tabs-rent-receipt" class="tabs-content">
-                    <div class="tabs-content-left">
-                        <img src="img/information_flow_flatline.png" alt="information_flow_flatline.png">
-                    </div>
-                    <div class="tabs-content-right">
-                        <h2>Générez vos quittances de loyer en 5 minutes</h2>
-                        <p class="text-desc">
-                            Bridge vous guide et vous simplifie la création de vos quittances de loyers. En quelques
-                            minutes générez vos documents et retournez sirotez votre limonade en terasse. Notre équipe
-                            s'occupe du reste !
-                        </p>
-                        <a href="#add-property" class="btn btn-blue">👉 Générer une quittance</a>
-                    </div>
-                </div>
-                <div id="tabs-lease" class="tabs-content hide-block">
-                    <div class="tabs-content-left">
-                        <img src="img/information_flow_flatline 2.png" alt="information_flow_flatline 2.png">
-                    </div>
-                    <div class="tabs-content-right">
-                        <h2>Générez votre bail de location en quelques clics</h2>
-                        <p class="text-desc">
-                            Depuis toujours on cherche à nous faire croire que la rédaction d'un bail est accessible
-                            uniquement aux experts. Bridge vous offre un service simplifié et fais de vous le seul
-                            capitaine de légitime de votre logement.
-                        </p>
-                        <a href="#add-property" class="btn btn-blue">👉 Générer mon bail</a>
-                    </div>
-                </div>
-                <div id="tabs-automation" class="tabs-content hide-block">
-                    <div class="tabs-content-left">
-                        <img src="img/information_flow_flatline 3.png" alt="information_flow_flatline 3.png">
-                    </div>
-                    <div class="tabs-content-right">
-                        <h2>Gagnez du temps et concentrez-vous sur l'essentiel</h2>
-                        <p class="text-desc">
-                            Bridge vous accompagne et facilite vos démarches pour une expérience simplifiée et plus
-                            humaine. Grâce à l'automatisation vos quittances sont transmises chaque mois à vos
-                            locataires de manière automatique.
-                        </p>
-                        <a href="#add-property" class="btn btn-blue">👉 Automatiser ma gestion</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>Créé pour vous faire <span class="text-blue">gagner du temps</span></h2>
-                <p class="text-info">Chez Bridge nous croyons en la valeur de votre temps. Pour cela nous avons
-                    développé un service simple pour les propriétaires indépendants desireux d'en gagner !</p>
-            </div>
-            <div class="bridge-bullet-points">
-                <div>
-                    <span class="highlight-yellow">🏁</span>
-                    <p>Inscrivez-vous en <span class="text-info-bold">moins d'une minute</span> et commencez à
-                        automatiser votre <span class="text-info-bold">gestion locative.</span></p>
-                </div>
-                <div>
-                    <span class="highlight-yellow">⛺️</span>
-                    <p>Laissez-vous <span class="text-info-bold">guider</span> dans la rédaction de votre <span
-                            class="text-info-bold">bail</span> et de vos <span class="text-info-bold">quittances.</span>
-                    </p>
-                </div>
-                <div>
-                    <span class="highlight-yellow">⛱</span>
-                    <p><span class="text-info-bold">Automatisez l'envoie des documents</span> chaque mois à vos
-                        locataires.</p>
-                </div>
-                <div>
-                    <span class="highlight-yellow">🖋</span>
-                    <p><span class="text-info-bold">Faîtes signez</span> l'ensemble de vos documents électroniquement
-                        <span class="text-info-bold">en quelques clics.</span></p>
-                </div>
-                <div>
-                    <span class="highlight-yellow">☝️</span>
-                    <p>En cas de retard Bridge prend en charge l'envoi <span class="text-info-bold">des relances de
-                            paiment</span> à vos locataires.</p>
-                </div>
-                <div>
-                    <span class="highlight-yellow">⚖️</span>
-                    <p>Nos équipes s'assurent de maintenir vos documents <span class="text-info-bold">conformément aux
-                            réglementations.</span></p>
-                </div>
-            </div>
+          <a href="#signin" class="login">Connexion</a>
+          <a href="#signup" class="btn btn-blue-light text-secondary"
+            >S'inscrire sur Bridge</a
+          >
         </div>
-        <div class="beta-banner">
-            <div class="left">
-                <span class="highlight-white">🚀</span>
-            </div>
-            <div class="right">
-                <h2>Accéder en avant-première à la Beta de Bridge</h2>
-                <a href="#get-invite" class="btn btn-white">Obtenir une invitation 👈</a>
-            </div>
+      </header>
+      <div>
+        <div class="cover">
+          <img src="img/rocket_boy.png" alt="rocket_boy.png" />
         </div>
-        <div>
+        <div class="getting_started">
+          <div class="presentation">
+            <h1 class="big-title">
+              La gestion locative <span class="text-blue">simplifiée</span>
+            </h1>
+            <p class="text-secondary">
+              Créez votre bail et automatisez l'envoi de vos quittances de loyer
+              gratuitement dès maintenant
+            </p>
+          </div>
+          <div class="use_free">
             <div>
-                <h2>Comme <span class="text-blue" id="exampleName"></span>, rejoignez la communauté Bridge 🙋‍♂️</h2>
-                <p>Le coeur de notre plateforme est de répondre à vos besoins en proposant un service à l'écoute et
-                    centré sur votre confort d'utilisation</p>
-            </div>
-            <div class="reviews">
-                <div>
-                    <div>
-                        <p>"Enfin une plateforme construite par et pour les propriétaires indépendants ! Je recommande
-                        </p>
-                    </div>
-                    <div class="reviews_profil">
-                        <div>
-                            <img src="img/girl.jpg" alt="Tête de Héloïse">
-                        </div>
-                        <div>
-                            <h2>Héloïse</h2>
-                            <p>Avec Bridge depuis 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p>"Enfin une plateforme construite par et pour les propriétaires indépendants ! Je recommande
-                        </p>
-                    </div>
-                    <div class="reviews_profil">
-                        <div>
-                            <img src="img/girl.jpg" alt="Tête de Héloïse">
-                        </div>
-                        <div>
-                            <h2>Héloïse</h2>
-                            <p>Avec Bridge depuis 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p>"Enfin une plateforme construite par et pour les propriétaires indépendants ! Je recommande
-                        </p>
-                    </div>
-                    <div class="reviews_profil">
-                        <div>
-                            <img src="img/girl.jpg" alt="Tête de Héloïse">
-                        </div>
-                        <div>
-                            <h2>Héloïse</h2>
-                            <p>Avec Bridge depuis 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p>"Enfin une plateforme construite par et pour les propriétaires indépendants ! Je recommande
-                        </p>
-                    </div>
-                    <div class="reviews_profil">
-                        <div>
-                            <img src="img/girl.jpg" alt="Tête de Héloïse">
-                        </div>
-                        <div>
-                            <h2>Héloïse</h2>
-                            <p>Avec Bridge depuis 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <p>"Enfin une plateforme construite par et pour les propriétaires indépendants ! Je recommande
-                        </p>
-                    </div>
-                    <div class="reviews_profil">
-                        <div>
-                            <img src="img/girl.jpg" alt="Tête de Héloïse">
-                        </div>
-                        <div>
-                            <h2>Héloïse</h2>
-                            <p>Avec Bridge depuis 2020</p>
-                        </div>
-                    </div>
-                </div>
+              <a href="http://localhost:8080/add-property" class="btn btn-blue"
+                >Utiliser Bridge gratuitement</a
+              >
             </div>
             <div>
-                <a href="#" class="btn btn-blue">Commencer dès maintenant 💪</a>
+              <p class="text-secondary">👉 Pas de carte de crédit requise</p>
             </div>
-            <div>
-                <h2>Plus aucune excuse, c'est gratuit ! 💸</h2>
-                <p>L'ensemble des fonctionnalitées de Bridge sont gratuites. Commencez à ganger du temps dès maintenant
-                    !</p>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <h2>100% Gratuit</h2>
-                </div>
-                <div>
-                    <p>
-                        Bénéficiez de l’ensemble des outils disponibles sur la plateforme Bridge GRATUITEMENT durant
-                        toute la période de la Beta.
-                    </p>
-                    <p>
-                        Aucune carte de crédit requise, nous souhaitons créer le meilleur produit.
-                    </p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h2>Et <span class="text-blue">concrètement</span> ça fonctionne comment ? 🧐</h2>
-                    <p>Bridge est né avec la volonté de vous faciliter la vie. En seulement quatres étapes, générez vos
-                        documents et commencez à automatiser votre gestion locative.</p>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <p>1️⃣ Créez votre compte <span class="text-bold">en quelques secodnes</span></p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>2️⃣ <span class="text-bold">Paramétrez</span> les informations générales de <span
-                                    class="text-bold">votre logement</span></p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>3️⃣ Créez vos <span class="text-bold">quittances ou votre bail</span> de locations <span
-                                    class="text-bold">en quelques minutes</span></p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <p>4️⃣ <span class="text-bold">Automatisez l'envoi</span> de ces documents et les <span
-                                    class="text-bold">relances</span> vers <span class="text-bold">vos locataires</span>
-                            </p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2>L'outil essentiel des <span class="text-blue">propriétaires bailleurs</span> 💪</h2>
-                <p>Main dans la main avec les propriétaires bailleurs, nous avons identifié les problématiques de votre
-                    quotidien et crée les outils les plus simples pour y répondre.</p>
-                <a href="#" class="btn btn-blue">Devenir bêta-testeur 🥰</a>
-            </div>
+          </div>
         </div>
+        <div id="tabs" class="tabs">
+          <div>
+            <ul class="tabs-menu">
+              <li>
+                <a
+                  href="#rent-receipt"
+                  id="menu-rent-receipt"
+                  class="btn btn-tab active-tab-menu"
+                  onclick="showRentReceipt()"
+                  >📌 Quittances</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#lease"
+                  id="menu-lease"
+                  class="btn btn-tab"
+                  onclick="showLease()"
+                  >✍️ Bail de location</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#automation"
+                  id="menu-automation"
+                  class="btn btn-tab"
+                  onclick="showAutomation()"
+                  >🤖 Automatisez la gestion</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="tabs-rent-receipt" class="tabs-content">
+            <div class="tabs-content-left">
+              <img
+                src="img/information_flow_flatline.png"
+                alt="information_flow_flatline.png"
+              />
+            </div>
+            <div class="tabs-content-right">
+              <h2>Générez vos quittances de loyer en 5 minutes</h2>
+              <p class="text-desc">
+                Bridge vous guide et vous simplifie la création de vos
+                quittances de loyers. En quelques minutes générez vos documents
+                et retournez sirotez votre limonade en terasse. Notre équipe
+                s'occupe du reste !
+              </p>
+              <a href="#add-property" class="btn btn-blue"
+                >👉 Générer une quittance</a
+              >
+            </div>
+          </div>
+          <div id="tabs-lease" class="tabs-content hide-block">
+            <div class="tabs-content-left">
+              <img
+                src="img/information_flow_flatline 2.png"
+                alt="information_flow_flatline 2.png"
+              />
+            </div>
+            <div class="tabs-content-right">
+              <h2>Générez votre bail de location en quelques clics</h2>
+              <p class="text-desc">
+                Depuis toujours on cherche à nous faire croire que la rédaction
+                d'un bail est accessible uniquement aux experts. Bridge vous
+                offre un service simplifié et fais de vous le seul capitaine de
+                légitime de votre logement.
+              </p>
+              <a href="#add-property" class="btn btn-blue"
+                >👉 Générer mon bail</a
+              >
+            </div>
+          </div>
+          <div id="tabs-automation" class="tabs-content hide-block">
+            <div class="tabs-content-left">
+              <img
+                src="img/information_flow_flatline 3.png"
+                alt="information_flow_flatline 3.png"
+              />
+            </div>
+            <div class="tabs-content-right">
+              <h2>Gagnez du temps et concentrez-vous sur l'essentiel</h2>
+              <p class="text-desc">
+                Bridge vous accompagne et facilite vos démarches pour une
+                expérience simplifiée et plus humaine. Grâce à l'automatisation
+                vos quittances sont transmises chaque mois à vos locataires de
+                manière automatique.
+              </p>
+              <a href="#add-property" class="btn btn-blue"
+                >👉 Automatiser ma gestion</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="section-2">
+          <h2>
+            Créé pour vous faire
+            <span class="text-blue">gagner du temps 🏎️</span>
+          </h2>
+          <p class="text-info">
+            Chez Bridge nous croyons en la valeur de votre temps. Pour cela nous
+            avons développé un service simple pour les propriétaires
+            indépendants desireux d'en gagner !
+          </p>
+        </div>
+        <div class="bridge-bullet-points">
+          <div>
+            <span class="highlight-yellow">🏁</span>
+            <p class="bullet-points-legend">
+              Inscrivez-vous en
+              <span class="text-info-bold">moins d'une minute</span> et
+              commencez à automatiser votre
+              <span class="text-info-bold">gestion locative.</span>
+            </p>
+          </div>
+          <div>
+            <span class="highlight-yellow">⛺️</span>
+            <p class="bullet-points-legend">
+              Laissez-vous <span class="text-info-bold">guider</span> dans la
+              rédaction de votre <span class="text-info-bold">bail</span> et de
+              vos <span class="text-info-bold">quittances.</span>
+            </p>
+          </div>
+          <div>
+            <span class="highlight-yellow">⛱</span>
+            <p class="bullet-points-legend">
+              <span class="text-info-bold"
+                >Automatisez l'envoie des documents</span
+              >
+              chaque mois à vos locataires.
+            </p>
+          </div>
+          <div>
+            <span class="highlight-yellow">🖋</span>
+            <p class="bullet-points-legend">
+              <span class="text-info-bold">Faîtes signez</span> l'ensemble de
+              vos documents électroniquement
+              <span class="text-info-bold">en quelques clics.</span>
+            </p>
+          </div>
+          <div>
+            <span class="highlight-yellow">☝️</span>
+            <p class="bullet-points-legend">
+              En cas de retard Bridge prend en charge l'envoi
+              <span class="text-info-bold">des relances de paiment</span> à vos
+              locataires.
+            </p>
+          </div>
+          <div>
+            <span class="highlight-yellow">⚖️</span>
+            <p class="bullet-points-legend">
+              Nos équipes s'assurent de maintenir vos documents
+              <span class="text-info-bold"
+                >conformément aux réglementations.</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="beta-banner">
+        <div class="left">
+          <span class="highlight-white">🚀</span>
+        </div>
+        <div class="right">
+          <h3>Accéder en avant-première à la Beta de Bridge</h3>
+          <a href="#get-invite" class="btn btn-white"
+            >Obtenir une invitation 👈</a
+          >
+        </div>
+      </div>
+      <div>
+        <div class="section-3">
+          <h2>
+            Comme <span class="text-blue-underline" id="exampleName"></span>,
+            rejoignez la communauté Bridge 🙋‍♂️
+          </h2>
+          <p class="text-info">
+            Le coeur de notre plateforme est de répondre à vos besoins en
+            proposant un service à l'écoute et centré sur votre confort
+            d'utilisation
+          </p>
+        </div>
+        <div class="reviews">
+          <div>
+            <div>
+              <p>
+                "Enfin une plateforme construite par et pour les propriétaires
+                indépendants ! Je recommande"
+              </p>
+            </div>
+            <div class="reviews_profil">
+              <div>
+                <img src="img/girl.jpg" alt="Tête de Héloïse" />
+              </div>
+              <div class="reviews-description">
+                <h2>Héloïse</h2>
+                <p>Avec Bridge depuis 2020</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                "Enfin une plateforme construite par et pour les propriétaires
+                indépendants ! Je recommande"
+              </p>
+            </div>
+            <div class="reviews_profil">
+              <div>
+                <img src="img/girl.jpg" alt="Tête de Héloïse" />
+              </div>
+              <div class="reviews-description">
+                <h2>Héloïse</h2>
+                <p>Avec Bridge depuis 2020</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                "Enfin une plateforme construite par et pour les propriétaires
+                indépendants ! Je recommande"
+              </p>
+            </div>
+            <div class="reviews_profil">
+              <div>
+                <img src="img/girl.jpg" alt="Tête de Héloïse" />
+              </div>
+              <div class="reviews-description">
+                <h2>Héloïse</h2>
+                <p>Avec Bridge depuis 2020</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                "Enfin une plateforme construite par et pour les propriétaires
+                indépendants ! Je recommande"
+              </p>
+            </div>
+            <div class="reviews_profil">
+              <div>
+                <img src="img/girl.jpg" alt="Tête de Héloïse" />
+              </div>
+              <div class="reviews-description">
+                <h2>Héloïse</h2>
+                <p>Avec Bridge depuis 2020</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                "Enfin une plateforme construite par et pour les propriétaires
+                indépendants ! Je recommande"
+              </p>
+            </div>
+            <div class="reviews_profil">
+              <div>
+                <img src="img/girl.jpg" alt="Tête de Héloïse" />
+              </div>
+              <div class="reviews-description">
+                <h2>Héloïse</h2>
+                <p>Avec Bridge depuis 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-section-3">
+          <a href="#" class="btn btn-blue">Commencer dès maintenant 💪</a>
+        </div>
+        <div class="section-4">
+          <h2>Plus aucune excuse, c'est gratuit ! 💸</h2>
+          <p class="text-info">
+            L'ensemble des fonctionnalitées de Bridge sont gratuites. Commencez
+            à ganger du temps dès maintenant !
+          </p>
+        </div>
+        <div class="pricing">
+          <div>
+            <img src="img/jetpack.png" alt="Homme qui décolle" />
+            <h2>100% Gratuit</h2>
+          </div>
+          <div class="text-pricing">
+            <p>
+              Bénéficiez de l’ensemble des outils disponibles sur la plateforme
+              Bridge GRATUITEMENT durant toute la période de la Beta.
+            </p>
+            <p>
+              Aucune carte de crédit requise, nous souhaitons créer le meilleur
+              produit.
+            </p>
+          </div>
+          <a href="#" class="btn btn-blue">Utiliser Bridge</a>
+        </div>
+        <div class="section-5">
+          <div>
+            <h2>
+              Et <span class="text-blue">concrètement</span> ça fonctionne
+              comment ? 🧐
+            </h2>
+            <p class="text-info">
+              Bridge est né avec la volonté de vous faciliter la vie. En
+              seulement quatres étapes, générez vos documents et commencez à
+              automatiser votre gestion locative.
+            </p>
+          </div>
+          <div class="fonctionnalitees">
+            <div class="card">
+              <div>
+                <p>
+                  1️⃣ Créez votre compte
+                  <span class="text-info-bold">en quelques secondes</span>
+                </p>
+              </div>
+              <div class="fonctionnalitees-images">
+                <img src="img/fonctionnalitees-1.png" alt="" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <p>
+                  2️⃣ <span class="text-info-bold">Paramétrez</span> les
+                  informations générales de
+                  <span class="text-info-bold">votre logement</span>
+                </p>
+              </div>
+              <div class="fonctionnalitees-images">
+                <img src="img/fonctionnalitees-2.png" alt="" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <p>
+                  3️⃣ Créez vos
+                  <span class="text-info-bold">quittances ou votre bail</span>
+                  de locations
+                  <span class="text-info-bold">en quelques minutes</span>
+                </p>
+              </div>
+              <div class="fonctionnalitees-images">
+                <img src="img/fonctionnalitees-3.png" alt="" />
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <p>
+                  4️⃣ <span class="text-info-bold">Automatisez l'envoi</span> de
+                  ces documents et les
+                  <span class="text-info-bold">relances</span> vers
+                  <span class="text-info-bold">vos locataires</span>
+                </p>
+              </div>
+              <div class="fonctionnalitees-images">
+                <img src="img/fonctionnalitees-4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-6">
+          <h2>
+            L'outil essentiel des
+            <span class="text-blue">propriétaires bailleurs</span> 💪
+          </h2>
+          <p class="text-info">
+            Main dans la main avec les propriétaires bailleurs, nous avons
+            identifié les problématiques de votre quotidien et crée les outils
+            les plus simples pour y répondre.
+          </p>
+          <div class="beta-access">
+            <a href="#" class="btn btn-blue">Devenir bêta-testeur 🥰</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <!-- <div>
+      <!-- <div>
             <div>
                 <label for="">Langue: </label>
             </div>
@@ -312,105 +443,114 @@
                 </select>
             </div>
         </div> -->
+      <div class="footer-logo">
+        <h2>Bridge.</h2>
+      </div>
+      <div class="footer-link">
         <div>
-            <h1>Bridge.</h1>
+          <h3>Bridge</h3>
+          <ul>
+            <li><a href="#">Le concept</a></li>
+            <li><a href="#">L'équipe</a></li>
+            <li><a href="#">Pack presse</a></li>
+          </ul>
         </div>
-        <div class="footer-link">
-            <div>
-                <h3>Bridge</h3>
-                <ul>
-                    <li><a href="#">Le concept</a></li>
-                    <li><a href="#">L'équipe</a></li>
-                    <li><a href="#">Pack presse</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>La solution</h3>
-                <ul>
-                    <li><a href="#">Commencez gratuitement</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Transparence</h3>
-                <ul>
-                    <li><a href="#">Politique de confidentialité</a></li>
-                    <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Conditions d'utilisations</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Contactez-nous</h3>
-                <ul>
-                    <li><a href="#">Discutons ensemble 🔥</a></li>
-                    <li><a href="#">L'équipe</a></li>
-                    <li><a href="#">Pack presse</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Bridge Cover SAS</h3>
-                <ul>
-                    <li>hello@bridge.fr</li>
-                    <li>41 Avenue Besnardière,</li>
-                    <li>49100 ANGERS.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Fait avec amour en France 🇫🇷</h3>
-            </div>
+        <div>
+          <h3>La solution</h3>
+          <ul>
+            <li><a href="#">Commencez gratuitement</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
         </div>
+        <div>
+          <h3>Transparence</h3>
+          <ul>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Conditions d'utilisations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contactez-nous</h3>
+          <ul>
+            <li><a href="#">Discutons ensemble 🔥</a></li>
+            <li><a href="#">L'équipe</a></li>
+            <li><a href="#">Pack presse</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Bridge Cover SAS</h3>
+          <ul>
+            <li>hello@bridge.fr</li>
+            <li>41 Avenue Besnardière,</li>
+            <li>49100 ANGERS.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Fait avec amour en France 🇫🇷</h3>
+        </div>
+      </div>
     </div>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script>
-        let rentReceiptTab = document.getElementById('tabs-rent-receipt')
-        let leaseTab = document.getElementById('tabs-lease')
-        let automationTab = document.getElementById('tabs-automation')
-        let tabs = document.getElementById('tabs')
-        let buttonsMenu = ['menu-rent-receipt', 'menu-lease', 'menu-automation']
-        let exampleName = document.getElementById('exampleName')
+      let rentReceiptTab = document.getElementById("tabs-rent-receipt");
+      let leaseTab = document.getElementById("tabs-lease");
+      let automationTab = document.getElementById("tabs-automation");
+      let tabs = document.getElementById("tabs");
+      let buttonsMenu = ["menu-rent-receipt", "menu-lease", "menu-automation"];
+      let exampleName = document.getElementById("exampleName");
 
-        function activeTabMenu(menu_active) {
-            document.getElementById(menu_active).classList.add('active-tab-menu')
-            buttonsMenu.forEach(elem => {
-                if (elem !== menu_active) {
-                    console.log(elem)
-                    document.getElementById(elem).classList.remove('active-tab-menu')
-                }
-            })
-        }
+      function activeTabMenu(menu_active) {
+        document.getElementById(menu_active).classList.add("active-tab-menu");
+        buttonsMenu.forEach((elem) => {
+          if (elem !== menu_active) {
+            console.log(elem);
+            document.getElementById(elem).classList.remove("active-tab-menu");
+          }
+        });
+      }
 
-        // Tab menu to presesent 'quittances', 'bail' and 'automatisation', change background color and just show tab which want to see.
-        function showRentReceipt() {
-            rentReceiptTab.classList.remove('hide-block')
-            leaseTab.classList.add('hide-block')
-            automationTab.classList.add('hide-block')
-            tabs.style.backgroundColor = '#F3F7FD'
-            activeTabMenu('menu-rent-receipt')
-        }
+      // Tab menu to presesent 'quittances', 'bail' and 'automatisation', change background color and just show tab which want to see.
+      function showRentReceipt() {
+        rentReceiptTab.classList.remove("hide-block");
+        leaseTab.classList.add("hide-block");
+        automationTab.classList.add("hide-block");
+        tabs.style.backgroundColor = "#F3F7FD";
+        activeTabMenu("menu-rent-receipt");
+      }
 
-        function showLease() {
-            leaseTab.classList.remove('hide-block')
-            rentReceiptTab.classList.add('hide-block')
-            automationTab.classList.add('hide-block')
-            tabs.style.backgroundColor = '#FFFCEF'
-            activeTabMenu('menu-lease')
-        }
+      function showLease() {
+        leaseTab.classList.remove("hide-block");
+        rentReceiptTab.classList.add("hide-block");
+        automationTab.classList.add("hide-block");
+        tabs.style.backgroundColor = "#FFFCEF";
+        activeTabMenu("menu-lease");
+      }
 
-        function showAutomation() {
-            automationTab.classList.remove('hide-block')
-            rentReceiptTab.classList.add('hide-block')
-            leaseTab.classList.add('hide-block')
-            tabs.style.backgroundColor = '#FFF1F1'
-            activeTabMenu('menu-automation')
-        }
+      function showAutomation() {
+        automationTab.classList.remove("hide-block");
+        rentReceiptTab.classList.add("hide-block");
+        leaseTab.classList.add("hide-block");
+        tabs.style.backgroundColor = "#FFF1F1";
+        activeTabMenu("menu-automation");
+      }
 
-        // Typed text to change name on landing
-        new Typewriter('#exampleName', {
-            strings: ['Baptiste', 'Stéphanie', 'Christophe', 'Céline', 'David', 'Laura', 'Julien', 'Manon', 'Nicolas'],
-            autoStart: true,
-            loop: true
-        })
+      // Typed text to change name on landing
+      new Typewriter("#exampleName", {
+        strings: [
+          "Baptiste",
+          "Stéphanie",
+          "Christophe",
+          "Céline",
+          "David",
+          "Laura",
+          "Julien",
+          "Manon",
+          "Nicolas",
+        ],
+        autoStart: true,
+        loop: true,
+      });
     </script>
-</body>
-
+  </body>
 </html>
