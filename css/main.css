@@ -34,6 +34,19 @@ header {
   margin-bottom: 20px;
 }
 
+.logo {
+  width: 12%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.sign {
+  text-align: right;
+  width: 88%;
+}
+
 h1,
 h2 {
   font-family: proxima-nova-bold;
@@ -575,6 +588,11 @@ p {
 
 .footer-logo {
   margin-right: 10%;
+  width: 15%;
+}
+
+.footer-logo img {
+  width: 100%;
 }
 
 .footer-link {
