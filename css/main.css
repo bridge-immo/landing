@@ -104,13 +104,42 @@ a {
   text-align: center !important;
   margin: 10px;
   margin-left: 0px;
-  width: 40%;
+  font-family: proxima-nova-regular;
+}
+
+.btn:hover {
+  padding: 14px 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center !important;
+  margin: 10px;
+  margin-left: 0px;
+  font-family: proxima-nova-regular;
+  font-size: 1.05em;
+  overflow: hidden;
+  transition: all 0.13s ease-out;
+}
+
+.btn-tab {
+  padding: 13px 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center !important;
+  margin: 10px;
+  margin-left: 0px;
   font-family: proxima-nova-regular;
 }
 
 .btn-tab:hover {
   background: rgba(0, 0, 0, 0.05);
   border-radius: 4px;
+  padding: 13px 40px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center !important;
+  margin: 10px;
+  margin-left: 0px;
+  font-family: proxima-nova-regular;
 }
 
 .btn-blue {
@@ -121,6 +150,7 @@ a {
 .btn-blue:hover {
   background-color: #72b0ff;
   color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
 .btn-blue-light {
@@ -129,9 +159,9 @@ a {
 }
 
 .btn-blue-light:hover {
-  background-color: #e2eeff;
+  background-color: #e8f2ff;
   color: #0071ff;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
 .btn-white {
@@ -144,6 +174,7 @@ a {
   color: #0071ff;
   background-color: #e2eeff;
   border: #0071ff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
 .text-blue {
@@ -164,8 +195,8 @@ a {
 /* Header */
 
 .cover {
-  padding-left: 30%;
-  padding-right: 30%;
+  padding-left: 33%;
+  padding-right: 33%;
 }
 
 .cover img {
@@ -195,7 +226,7 @@ p {
 }
 
 .text-secondary {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .use_free .text-secondary {
@@ -216,9 +247,14 @@ p {
 
 .tabs-menu {
   display: flex;
+  margin-top: 3%;
   justify-content: space-around;
   white-space: nowrap;
   margin-bottom: 8%;
+}
+
+.tabs-menu a {
+  font-size: 17px;
 }
 
 .tabs-menu li {
@@ -254,6 +290,7 @@ p {
   text-align: left;
   margin-left: 0;
   margin-bottom: 10%;
+  color: black;
 }
 
 .tabs-content-right .btn .btn-blue {
@@ -345,7 +382,7 @@ p {
 .reviews {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 4%;
 }
 
@@ -357,12 +394,11 @@ p {
 
 .reviews > div {
   background-color: #f3f7fd;
-  border-radius: 3%;
-  width: 25%;
-  margin: 10px;
+  border-radius: 5px;
+  width: 23%;
+  margin: 20px;
   text-align: left;
-  padding: 0px 30px;
-  padding-top: 2%;
+  padding: 2% 30px;
 }
 
 .reviews_profil img {
@@ -396,7 +432,7 @@ p {
   text-align: left;
   width: 75%;
   padding-left: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .btn-section-3 {
@@ -456,7 +492,6 @@ p {
 
 .fonctionnalitees > .card {
   background-color: #f3f7fd;
-
   width: 45%;
   margin: 10px;
   text-align: left;
@@ -473,6 +508,7 @@ p {
 
 .fonctionnalitees .card div p {
   color: black;
+  font-size: 18px;
 }
 
 .fonctionnalitees-images {
