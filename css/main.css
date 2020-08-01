@@ -28,10 +28,13 @@ body {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  /*background-color: rgba(255, 255, 255, 0.85);*/
+  /*border-bottom: 0.5px solid #a8b2b9;*/
 }
 
 .logo {
@@ -80,7 +83,7 @@ p {
 }
 
 .container {
-  margin: 0 10%;
+  margin: 0% 10%;
   text-align: center;
   font-family: proxima-nova-light;
 }
@@ -129,7 +132,6 @@ a {
   margin-left: 0px;
   font-family: proxima-nova-regular;
   font-size: 1.05em;
-  overflow: hidden;
   transition: all 0.13s ease-out;
 }
 
@@ -216,6 +218,14 @@ a {
   width: 100%;
 }
 
+.pic-right-team {
+  width: 40%;
+}
+
+.pic-right-team img {
+  width: 100%;
+}
+
 /* Bridge presentation */
 
 .presentation h1,
@@ -227,9 +237,37 @@ p {
   margin: 10px 0;
 }
 
+.getting_started-team {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+
+.presentation-contact {
+  margin: 10px 0;
+  padding-top: 0%;
+}
+
+.presentation-team {
+  margin: 10px 0;
+  padding-top: 0%;
+  width: 40%;
+}
+
 .big-title {
   font-size: 53px;
   margin-top: 0;
+}
+
+.big-title-contact {
+  font-size: 53px;
+  margin-top: 5%;
+}
+
+.big-title-team {
+  text-align: left;
+  font-size: 40px;
+  margin-top: 25%;
 }
 
 .use_free {
@@ -238,8 +276,20 @@ p {
   margin-top: 5%;
 }
 
+.use_free-contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .text-secondary {
   font-size: 20px;
+}
+
+.text-secondary-contact {
+  font-size: 20px;
+  padding: 0 12%;
 }
 
 .use_free .text-secondary {
@@ -603,4 +653,99 @@ p {
 
 .footer-link > div {
   width: 30%;
+}
+
+/*Section gauche Page Contact*/
+
+.left-section-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 10%;
+}
+
+.right-image-contact {
+  width: 40%;
+}
+
+.right-image-contact img {
+  width: 100%;
+}
+
+.left-contact {
+  text-align: left;
+  margin-left: 0;
+  width: 50%;
+}
+
+.left-contact p {
+  margin-bottom: 15%;
+  margin-left: 0;
+  text-align: left;
+}
+
+/*Section droite Page Contact*/
+
+.right-section-contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 10%;
+}
+
+.left-image-contact {
+  width: 40%;
+}
+
+.left-image-contact img {
+  width: 100%;
+}
+
+.right-contact {
+  text-align: left;
+  margin-left: 0;
+  width: 50%;
+}
+
+.right-contact p {
+  margin-bottom: 15%;
+  margin-left: 0;
+  text-align: left;
+}
+
+/* Team section */
+
+.team-section {
+  margin-top: 10%;
+}
+
+.team-section-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team-section-box {
+  padding: 2% 5%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.profile-box {
+  background-color: #f3f7fd;
+  padding: 2% 2%;
+  margin: 0 2%;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: "center";
+}
+
+.picture-box {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.picture-box img {
+  width: 100%;
+  text-align: "center";
 }
