@@ -714,7 +714,7 @@ p {
 /* Team section */
 
 .team-section {
-  margin-top: 10%;
+  margin-top: 13%;
 }
 
 .team-section-box {
@@ -724,18 +724,29 @@ p {
 }
 
 .team-section-box {
-  padding: 2% 5%;
+  padding: 0% 5%;
   border-radius: 5px;
   text-align: center;
 }
 
 .profile-box {
-  background-color: #f3f7fd;
+  /*background-color: #f3f7fd;*/
   padding: 2% 2%;
   margin: 0 2%;
   border-radius: 5px;
   justify-content: center;
   text-align: "center";
+}
+
+.profile-box h3 {
+  font-family: proxima-nova-semibold;
+  margin-bottom: 4%;
+}
+
+.profile-box h4 {
+  color: #0071ff;
+  font-family: proxima-nova-semibold;
+  margin-top: 0;
 }
 
 .picture-box {
@@ -748,4 +759,42 @@ p {
 .picture-box img {
   width: 100%;
   text-align: "center";
+}
+
+/* Stats team section */
+
+.stats-bandeau {
+  padding: 2% 10%;
+  margin: 10% 0;
+  background-color: #f3f7fd;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.stat-label {
+  color: #0071ff;
+  font-family: proxima-nova-regular;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.stat-title {
+  font-size: 32px;
+  margin-bottom: 5%;
+}
+
+/*Jobs section*/
+
+.jobs-section {
+  margin: 10% 0%;
+}
+
+.jobs-section h4 {
+  color: #a8b2b9;
+  margin-bottom: 7%;
+}
+
+.jobs-section h2 {
+  margin-top: 0;
 }
