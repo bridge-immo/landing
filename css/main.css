@@ -226,6 +226,14 @@ a {
   width: 100%;
 }
 
+.pic-right-concept {
+  width: 50%;
+}
+
+.pic-right-concept img {
+  width: 100%;
+}
+
 /* Bridge presentation */
 
 .presentation h1,
@@ -243,6 +251,14 @@ p {
   padding-top: 5%;
 }
 
+.getting_started-concept {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .presentation-contact {
   margin: 10px 0;
   padding-top: 0%;
@@ -252,6 +268,13 @@ p {
   margin: 10px 0;
   padding-top: 0%;
   width: 40%;
+}
+
+.presentation-concept {
+  margin: 10px 0;
+  padding-top: 0%;
+  width: 40%;
+  text-align: left;
 }
 
 .big-title {
@@ -268,6 +291,13 @@ p {
   text-align: left;
   font-size: 40px;
   margin-top: 25%;
+}
+
+.big-title-concept {
+  text-align: left;
+  font-size: 40px;
+  margin-top: 10%;
+  margin-bottom: 4%;
 }
 
 .use_free {
@@ -389,6 +419,11 @@ p {
 
 .text-info {
   padding: 0% 16%;
+  font-family: proxima-nova-semibold;
+}
+.text-info-concept {
+  margin-left: 0;
+  margin-bottom: 10%;
   font-family: proxima-nova-semibold;
 }
 
@@ -791,10 +826,86 @@ p {
 }
 
 .jobs-section h4 {
-  color: #a8b2b9;
+  color: #5b6469;
   margin-bottom: 7%;
 }
 
 .jobs-section h2 {
   margin-top: 0;
+}
+
+/* Constat du marché page concept*/
+
+.grey-banner {
+  margin-top: 8%;
+  background-color: #f3f7fd;
+  padding: 5% 0;
+}
+
+.constat-section-concept {
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+.constat-title {
+  margin-bottom: 0;
+}
+
+.left-section-concept {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5%;
+}
+
+.left-concept {
+  text-align: left;
+  margin-left: 0;
+  width: 50%;
+}
+
+.left-concept p {
+  margin-bottom: 15%;
+  margin-left: 0;
+  text-align: left;
+}
+
+.right-image-concept {
+  width: 40%;
+}
+
+.right-image-concept img {
+  width: 100%;
+}
+
+.right-section-concept {
+  display: flex;
+  justify-content: space-between;
+  padding: 14% 5%;
+}
+
+.left-image-concept {
+  width: 40%;
+}
+
+.left-image-concept img {
+  width: 100%;
+}
+
+.right-concept {
+  text-align: left;
+  margin-left: 0;
+  width: 50%;
+}
+
+.right-concept p {
+  margin-bottom: 15%;
+  margin-left: 0;
+  text-align: left;
+}
+
+/* Section solution Bridge */
+
+.solution-section-concept {
+  margin-top: 15%;
+  margin-bottom: 7%;
 }
