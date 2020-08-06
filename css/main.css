@@ -909,3 +909,131 @@ p {
   margin-top: 15%;
   margin-bottom: 7%;
 }
+
+.screen-section {
+  margin-right: 0;
+  margin-left: 10%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-family: proxima-nova-regular;
+}
+
+.left-screen-section {
+  align-content: space-between;
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+}
+
+.card-screen-section {
+  text-align: right;
+  padding: 5% 5%;
+  border-radius: 10px;
+  background-color: f3f7fd;
+  margin: 5% 0;
+}
+
+.card-screen-section:hover {
+  box-sizing: border-box;
+  text-align: right;
+  padding: 5% 5%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.card-screen-section p {
+  text-align: right;
+  font-size: 16px;
+}
+
+.title-line {
+  display: flex;
+  text-align: right;
+  background-color: green;
+}
+
+.title-line h1 {
+  text-align: right;
+  font-size: 20px;
+  background-color: hotpink;
+}
+
+.title-line p {
+  text-align: right;
+  font-size: 16px;
+}
+
+.title-line-image {
+  text-align: right;
+  width: 15%;
+  background-color: blue;
+}
+
+.title-line-image img {
+  text-align: right;
+  width: 100%;
+}
+
+.right-screen-section {
+  width: 60%;
+  padding-top: 2%;
+}
+
+.right-screen-image {
+  width: 110%;
+}
+
+.right-screen-image img {
+  width: 100%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Futur section page concept*/
+
+.futur-section-concept {
+  margin-top: 15%;
+  margin-bottom: 7%;
+}
+
+/* FAQ sextion*/
+
+.faq-box {
+  margin: 5% 10%;
+}
+
+.question-box-open {
+  padding: 5% 5%;
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.line-question {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.down-arrow {
+  flex: 0.023;
+}
+
+.down-arrow img {
+  width: 100%;
+}
+
+.question-title {
+  flex: 0.8;
+  font-family: proxima-nova-bold;
+  font-size: 18px;
+}
+
+.anwser {
+  margin-left: 0;
+}
