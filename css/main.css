@@ -915,14 +915,16 @@ p {
   margin-left: 10%;
   width: 90%;
   display: flex;
+  flex: 1;
   justify-content: space-between;
+  align-items: center;
   font-family: proxima-nova-regular;
 }
 
 .left-screen-section {
   align-content: space-between;
   justify-content: space-between;
-  width: 30%;
+  flex: 0.3;
   height: 100%;
 }
 
@@ -951,14 +953,15 @@ p {
 
 .title-line {
   display: flex;
-  text-align: right;
-  background-color: green;
+  flex: 1;
+  justify-content: right;
+  align-items: center;
 }
 
 .title-line h1 {
   text-align: right;
+  flex: 0.8;
   font-size: 20px;
-  background-color: hotpink;
 }
 
 .title-line p {
@@ -968,8 +971,7 @@ p {
 
 .title-line-image {
   text-align: right;
-  width: 15%;
-  background-color: blue;
+  flex: 0.2;
 }
 
 .title-line-image img {
@@ -978,8 +980,7 @@ p {
 }
 
 .right-screen-section {
-  width: 60%;
-  padding-top: 2%;
+  flex: 0.6;
 }
 
 .right-screen-image {
@@ -1005,11 +1006,11 @@ p {
 }
 
 .question-box-open {
-  padding: 5% 5%;
+  margin: 5% 0;
+  padding: 2% 5%;
   text-align: left;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+  background-color: #f3f7fd;
 }
 
 .line-question {
@@ -1022,6 +1023,7 @@ p {
 
 .down-arrow {
   flex: 0.023;
+  cursor: pointer;
 }
 
 .down-arrow img {
@@ -1036,4 +1038,16 @@ p {
 
 .anwser {
   margin-left: 0;
+}
+
+/*center image section */
+
+.center-image {
+  margin: 2% 5%;
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+.center-image img {
+  width: 100%;
 }
