@@ -121,18 +121,11 @@ a {
   margin: 10px;
   margin-left: 0px;
   font-family: proxima-nova-regular;
+  transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  padding: 14px 40px;
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center !important;
-  margin: 10px;
-  margin-left: 0px;
-  font-family: proxima-nova-regular;
-  font-size: 1.05em;
-  transition: all 0.13s ease-out;
+  transform: scale(1.2);
 }
 
 .btn-tab {
@@ -147,14 +140,6 @@ a {
 
 .btn-tab:hover {
   background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  padding: 13px 40px;
-  text-decoration: none;
-  border-radius: 4px;
-  text-align: center !important;
-  margin: 10px;
-  margin-left: 0px;
-  font-family: proxima-nova-regular;
 }
 
 .btn-blue {
@@ -164,7 +149,6 @@ a {
 
 .btn-blue:hover {
   background-color: #72b0ff;
-  color: white;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -186,9 +170,7 @@ a {
 }
 
 .btn-white:hover {
-  color: #0071ff;
   background-color: #e2eeff;
-  border: #0071ff;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -866,7 +848,7 @@ p {
 .left-concept p {
   margin-bottom: 15%;
   margin-left: 0;
-  text-align: left;
+  text-align: justify;
 }
 
 .right-image-concept {
@@ -954,13 +936,13 @@ p {
 .title-line {
   display: flex;
   flex: 1;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
 }
 
 .title-line h1 {
   text-align: right;
-  flex: 0.8;
+  flex: 0.85;
   font-size: 20px;
 }
 
@@ -971,7 +953,7 @@ p {
 
 .title-line-image {
   text-align: right;
-  flex: 0.2;
+  flex: 0.08;
 }
 
 .title-line-image img {
